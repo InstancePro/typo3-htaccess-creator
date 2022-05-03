@@ -1,0 +1,29 @@
+{
+  "name": "instancepro/typo3-htaccess-creator",
+  "type": "composer-plugin",
+  "description": "InstancePro TYPO3 Htaccess Creator",
+  "keywords": [
+    "InstancePro",
+    "Installer",
+    "TYPO3",
+    "Extension",
+    "Composer"
+  ],
+  "homepage": "https://www.instance.pro/",
+  "license": "GPL-3.0-only",
+  "require": {
+    "composer-plugin-api": "^1.0.0 || ^2.0.0",
+    "typo3/cms-composer-installers": "^2.0 || ^3.0"
+  },
+  "require-dev": {
+    "composer/composer": "^2.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "InstancePro\\Composer\\": "src/"
+    }
+  },
+  "extra": {
+    "class": "InstancePro\\Composer\\Installer\\Plugin"
+  }
+}
